@@ -4,6 +4,6 @@ var
   msg: Caractere
 
 inicio
-  msg <- "Olá, mundo hehe"
+  msg <- "Olá, mundo Ibigua"
   Escreval (msg)
 fimalgoritmo
