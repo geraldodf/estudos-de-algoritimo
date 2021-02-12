@@ -1,9 +1,9 @@
-algoritmo "semnome"
-
+algoritmo "O começo"
 var
-  msg: Caractere
+  nome: Caractere
 
 inicio
-  msg <- "Olá, mundo Ibigua"
-  Escreval (msg)
+  Escreval ("Digite seu nome: ", Nome)
+  Leia (nome)
+  Escreval ("Muito prazer ", Nome,  " Posso ajuadr vc? ")
 fimalgoritmo
