@@ -1,12 +1,11 @@
-algoritmo "semnome"
+algoritmo "conversor"
 var
-  N1, N2, soma: Inteiro
-
+   angulo, S:real
 inicio
-      Escreva ("Informe um numero: ")
-      Leia (N1)
-      Escreva ("Informe outro numero: ")
-      Leia (N2)
-      soma <- N1 + N2
-      Escreva (" A soma entre ", N1, " e ", N2, " e igual a ", soma)
+      Escreva ("informe um angulo: ")
+      LEia (angulo)
+      S <- Sen(grauprad (angulo) )
+      Escreva ("o Seno de ", angulo, " e igual a ", S)
 fimalgoritmo
+
+
