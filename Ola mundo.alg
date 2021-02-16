@@ -1,10 +1,9 @@
-algoritmo "creuza01"
+algoritmo "semnome"
 var
-   reais, dolares: real
+   F, C: Real
 inicio
-      Escreva ("Quantos reais eu tenho? R$")
-      Leia(reais)
-      dolares <- reais/5.37
-      Escreva("Posso ter US$", Dolares)
-
+      Escreva ("Qual e a temperatura aqui? ")
+      Leia (F)
+      c <- (F - 32) / 1.8
+      Escreva ("No brasil estaria ", C:4:1)
 fimalgoritmo
