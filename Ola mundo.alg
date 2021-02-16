@@ -1,13 +1,10 @@
-algoritmo "Creuza"
+algoritmo "creuza01"
 var
-   ano_atual, ano_nasc, idade : inteiro
-
+   reais, dolares: real
 inicio
-      Escreva("Em que ano nós estamos? ")
-      Leia (ano_atual)
-      Escreva("Em que ano eu nasci? ")
-      Leia (ano_nasc)
-      idade <- ano_atual - ano_nasc
-      Escreva ("Minha idade será ", idade)
-      
+      Escreva ("Quantos reais eu tenho? R$")
+      Leia(reais)
+      dolares <- reais/5.37
+      Escreva("Posso ter US$", Dolares)
+
 fimalgoritmo
