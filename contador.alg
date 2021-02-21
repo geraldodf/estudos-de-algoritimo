@@ -1,11 +1,15 @@
 algoritmo "contador01"
 var
-   contador: inteiro
+   contador, salto, valor: inteiro
 inicio
-      contador <- 10
-      enquanto (contador >= 0) faca
+      contador <- 0
+      escreva("Quer contar ate quanto? ")
+      leia(valor)
+      escreva("Qual sera o valor do salto? ")
+      leia(salto)
+      enquanto (contador <= valor ) faca
          escreval(contador)
-         contador <- contador - 1
+         contador <- contador + salto
       fimenquanto
       escreval("Terminei de contar")
 fimalgoritmo
