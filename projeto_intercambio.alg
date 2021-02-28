@@ -1,11 +1,14 @@
 algoritmo "projeto_intercambio"
 var
-   d, m: real
+   d, m, dias: real
    
 inicio
       escreva("Quantos dias vc ficara no intercambio? ")
       leia(D)
       m <- (d /30)
-      escreva(m, " Meses. ")
+      dias <- (m % d )
+      escreva(m, " Meses, ")
+      
+      
       
 fimalgoritmo
