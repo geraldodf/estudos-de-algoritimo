@@ -18,6 +18,7 @@ inicio
       Senao
            Escreval (" INAPTO PARA TIRAR CARTEIRA")
            Escreval ("----------------------------")
+           escreval (" Boa sorte da proxima vez !! ")
 
       FimSe
       
