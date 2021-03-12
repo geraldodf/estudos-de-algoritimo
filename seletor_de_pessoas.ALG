@@ -30,6 +30,12 @@ repita
       se (sexo = "f") entao
       fa <- (fa + 1)
       fimse
+           se (idade >= 25) e (idade <= 30)entao
+            fa <- (fa + 1)
+           fimse
+                se (cor = castanho) entao
+                fa <- (fa + 1)
+                fimse
       leia(cor)
       escreval("Quer continuar? [S/N] ")
       leia(r)
