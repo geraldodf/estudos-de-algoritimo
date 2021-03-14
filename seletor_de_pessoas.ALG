@@ -1,7 +1,7 @@
 algoritmo "seletor_de_pessoas"
 var
-   sexo, r: caractere
-   idade, cor, fa, ma: inteiro
+   sexo, r, cor: caractere
+   idade, fa, ma: inteiro
 inicio
 repita
       escreval("=============================")
@@ -17,29 +17,32 @@ repita
       escreval("[2] Castanho")
       escreval("[3] Loiro")
       escreval("[4] Ruivo")
+      leia(cor)
       escolha cor
               caso 1
-                   cor <- preto
+                   cor <- "preto"
               caso 2
-                   cor <- castanho
+                   cor <- "castanho"
               caso 3
-                   cor <- loiro
+                   cor <- "loiro"
               caso 4
-                   cor <- ruivo
+                   cor <- "ruivo"
+      escreval("Cor: ", cor)
       fimescolha
-      se (sexo = "f") entao
+      se (sexo = "f") e (cor = "loiro") e (idade >= 25) e (idade <= 30) entao
       fa <- (fa + 1)
       fimse
-           se (idade >= 25) e (idade <= 30)entao
-            fa <- (fa + 1)
+           se (sexo = "m") e (cor = "castanho" ) e ( idade > 18) entao
+           ma <- ( ma + 1 )
            fimse
-                se (cor = castanho) entao
-                fa <- (fa + 1)
-                fimse
-      leia(cor)
       escreval("Quer continuar? [S/N] ")
       leia(r)
       limpatela
 ate (r = "N")
+     escreval("-----------------------------")
+     escreval("      RESULTADO FINAL        ")
+     escreval("-----------------------------")
+     escreval("Total de homens com mais de 18 e cabelos castanhos é: ", ma)
+     escreval"(Total de mulheres entre 25 e 30 e cabelos loiros é: ", fa )
 
 fimalgoritmo
