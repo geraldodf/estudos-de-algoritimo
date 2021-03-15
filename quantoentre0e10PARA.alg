@@ -9,9 +9,9 @@ inicio
            leia(v)
            se(v>=0) e (v<=10) entao
                t <- t + 1
-               se (v%2=1) entao
+           fimse
+           se (v%2=1) entao
                   si <- si + v
-               fimse
            fimse
       fimpara
       escreval("Ao todo foram ", t, " valores entre 0 e 10")
